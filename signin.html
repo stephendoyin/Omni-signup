@@ -1,0 +1,98 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6 left-half d-none d-md-block">
+          <div class="d-flex justify-content-center">
+            <h1 class="big-text position-relative">
+              <span class="position-absolute quote"
+                >&OpenCurlyDoubleQuote;</span
+              >
+              <span class="position-absolute polygon"></span>
+              <span class="position-absolute polygon-orange"></span>
+              Omni channel for credit, credibility and collection
+            </h1>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div
+            class="d-flex justify-content-center align-items-center right-half"
+          >
+            <span
+              class="position-absolute polygon-orange polygon-orange--two"
+            ></span>
+            <span class="position-absolute ellipse"></span>
+
+            <div>
+              <img src="images/logo.png" class="logo" alt="logo" />
+              <form class="custom-form">
+                <h5 class="title">Sign In</h5>
+
+                <p class="m-0">Don't have an account yet?</p>
+                <a href="/signup.html" class="link">Sign up now</a>
+
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                    placeholder="Enter email"
+                    required
+                  />
+                  <small id="emailHelp" class="form-text text-muted"
+                    >We'll never share your email with anyone else.</small
+                  >
+                </div>
+                <div class="form-group position-relative">
+                  <label for="exampleInputEmail1">Password</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    placeholder="Enter password"
+                    required
+                  />
+                </div>
+                <div class="btn-wrapper">
+                  <button
+                    type="submit"
+                    class="btn shadow-lg my-3 btn-primary btn-block"
+                  >
+                    Sign In
+                  </button>
+                  <a href="#" class="link">Forgot your password</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

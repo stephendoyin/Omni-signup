@@ -1,0 +1,201 @@
+body {
+  font-family: "Fira Sans", sans-serif;
+  background: #fbfbfb;
+}
+
+* {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+.big-text {
+  color: #144188;
+  font-size: 3.125rem;
+  font-weight: 300;
+  max-width: 70%;
+  margin-top: 9rem;
+}
+
+p {
+  font-size: 1rem;
+  color: #2c2738;
+  font-weight: 400;
+}
+
+a.link {
+  color: #1c53f4;
+}
+
+.quote {
+  top: -50px;
+  left: -50px;
+  font-size: 6.25rem;
+}
+
+.logo {
+  height: 45px;
+  width: 45px;
+}
+
+label {
+  font-weight: 500;
+  color: #756f86;
+  font-size: 1rem;
+}
+
+.form-group {
+  margin-top: 1.75rem;
+}
+
+.left-half {
+  min-height: 100vh;
+  background: url(../images/bg.png);
+  background-position: center 110%;
+  background-repeat: no-repeat;
+  // background-size: contain;
+  background-color: #d7e3fc;
+
+  &-extended {
+    background: url(../images/bg.png);
+    background-repeat: no-repeat;
+    background-color: #d7e3fc;
+    background-position: center 100%;
+  }
+}
+
+.right-half {
+  min-height: 100vh;
+}
+
+.custom-form {
+  width: 350px;
+  min-width: 300px;
+  margin-top: 2.8125rem;
+}
+
+@media (min-width: 1200px) {
+  .custom-form {
+    width: 450px;
+    margin-top: 2.8125rem;
+  }
+  .big-text {
+    max-width: 465px;
+    margin-top: 7rem;
+  }
+}
+
+.form-control {
+  height: 52px !important;
+  box-shadow: 0px 4px 8px rgba(44, 39, 56, 0.04);
+}
+
+.btn {
+  height: 55px;
+  font-weight: 500;
+}
+
+.btn-wrapper {
+  margin-top: 3.5625rem;
+}
+
+.title {
+  font-weight: 700;
+  color: #000047;
+  font-size: 2.4375rem;
+  margin-bottom: 1.875rem;
+}
+
+.polygon {
+  top: -4rem;
+  left: 30%;
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-image: url(../images/polygon.svg);
+}
+
+.polygon-orange {
+  right: -4rem;
+  top: 0%;
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-image: url(../images/polygon-2.svg);
+  &--two {
+    top: 90%;
+    right: 3rem;
+  }
+}
+
+.ellipse {
+  right: 3rem;
+  top: 8%;
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-image: url(../images/ellipse.svg);
+}
+
+.restricted {
+  max-width: 433px;
+}
+
+.btn-custom {
+  background: rgba(26, 124, 222, 0.18);
+  height: 55px;
+  min-width: 190px;
+}
+
+.min-h {
+  min-height: 100vh;
+  padding: 3rem 0;
+}
+
+.content-container::before {
+  content: url(../images/pattern.png);
+  position: fixed;
+  left: 0;
+  top: 0;
+  opacity: 0.5;
+  z-index: -1;
+}
+.content-container::after {
+  content: url(../images/pattern.png);
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+@media (min-width: 1200px) {
+  .min-h {
+    min-height: 100vh;
+  }
+}
+
+.misc-bg {
+  right: 7rem;
+  top: 7%;
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-image: url(../images/polygon-2.svg);
+  &-two {
+    right: unset;
+    left: 7rem;
+    bottom: 7%;
+    background-image: url(../images/polygon.svg);
+    top: unset;
+  }
+}
